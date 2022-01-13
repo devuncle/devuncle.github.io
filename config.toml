@@ -1,4 +1,4 @@
-baseURL = 'devuncle.github.io'
+baseURL = 'https://devuncle.github.io'
 languageCode = 'en-us'
 title = '1020 Blog'
 theme = 'smol'
