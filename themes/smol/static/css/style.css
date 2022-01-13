@@ -1,0 +1,112 @@
+html {
+  overflow-y: scroll;
+}
+:root {
+  --bgcolor: #45465e;
+  --fontcolor: #444;
+  --linkcolor: #00e;
+  --visitedcolor: #551a8b;
+  --precolor: #fff;
+  --prebgcolor: #000;
+}
+/* 
+https://zhuanlan.zhihu.com/p/415344843
+
+#142334钢青 
+
+
+白色系：
+#F2ECDE  缟色
+
+#C0C4C3 月影白
+
+#569597 碧玉石
+#2E4E7E 藏青色
+#4C8DAE 群青色
+
+绿色系
+#789262 竹青色
+
+黑色系：
+#41555D  暗色
+ #303030 百草霜
+#3D3B4F 玄青
+
+#493131  缁色是黑色的一种，为黑泥之色。
+#5D513C  黑中带黄
+
+
+
+
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgcolor: #303030; /* #142334钢青  #303030 百草霜 */
+    --fontcolor: #f9fedc; /* #f9fedc 乳白  */
+    --linkcolor: #daa45a;
+    --visitedcolor: #85794f;
+    --precolor: #fff;
+    --prebgcolor: #383838;
+  }
+}
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font-size: 16px;
+  font-family: 'Fantasque Sans Mono', Courier, monospace;
+  color: var(--fontcolor);
+  background: var(--bgcolor);
+}
+a:link {
+  color: var(--linkcolor);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--visitedcolor);
+}
+a:active {
+  color: var(--visitedcolor);
+}
+h1,
+h2,
+h3 {
+  /* font-family: 'Fantasque Sans Mono'; */
+
+  line-height: 2;
+}
+p > code {
+  color: var(--precolor);
+  background: var(--prebgcolor);
+  padding: 2px;
+}
+pre {
+  color: var(--precolor);
+  background: var(--prebgcolor);
+  padding: 24px;
+  overflow-x: auto;
+}
+article {
+  padding: 24px 0;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+figcaption {
+  color: #888;
+  font: 12px/1.5 monospace;
+  text-align: center;
+}
+figure {
+  margin: auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
